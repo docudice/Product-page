@@ -1,0 +1,145 @@
+
+
+@import url('https://fonts.googleapis.com/css2? family= Barlow+Condensed:wght@100 & family= Space+Mono & display=swap');
+
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Barlow Condensed'sans-serif;
+    font-weight: 500px;
+}
+
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+    position: fixed;
+    top: 20%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-right: 8px;
+}
+
+#image{
+    width: 50%;
+    background-image: url("images/image-product-desktop.jpg");
+    background-size: cover;
+
+}
+
+#text{
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+p{
+    font-size: 14px;
+}
+
+h1{
+    color: hsl(212, 21%, 14%);
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    color: hsl(158, 36%, 37%);
+    font-size: x-large;
+}
+
+.price div{
+    font-size: small;
+    align-self: center;
+    margin-left: 20px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+#button{
+    margin-top: 10px;
+    width: 85%;
+   height: 10%;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+#button img{
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width: 376px) {
+    body{
+        overflow-x: hidden;
+    }
+  
+    .card{
+        width: 350px;
+        height: 580px;
+        border-radius: 10px;
+        background-color: white;
+        position: fixed;
+        top: 20%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        white-space: wrap;
+    }
+
+
+    #image{
+        height: 50%;
+        width: 100%;
+        background-image: url("images/image-product-mobile.jpg");
+        background-size: cover;
+    
+    }
+
+    #text{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+
+    h1{
+        font-size: xx-large;
+        line-height: 30px;
+    }
+
+
+    #button{
+        margin-left: 20px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .price{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       
+    }
+  }
